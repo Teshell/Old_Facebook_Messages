@@ -17,11 +17,15 @@ def log_in(email, password):
     root.destroy()
 
     # IMPORTANT !
-    # Get the url of the discussion from the mobile version of facebook
-    url = "https://m.facebook.com/messages/read/?tid=cid.c.100010674137983%3A100023722361169"
+    """ Get the url of the conversation from the mobile version of facebook in the browser
+    for exemple: url = "https://m.facebook.com/messages/read/?tid=..."
+    # Then add it to this url variable.
+    """
+    url = ""
 
-    # Add the browser driver like chrome or firefox
-    driver = webdriver.Chrome("D:\\Programming Files\\Python\\chromedriver.exe")
+    # Add the browser driver absolute path here
+    # exemple: driver = webdriver.Chrome("C:\\Users\\user\\Downloads\chromedriver.exe")
+    driver = webdriver.Chrome("")
 
     driver.get(url)
 
@@ -56,5 +60,4 @@ def main():
     root.mainloop()
 
 
-if __name__ == '__main__':
-    main()
+main()
